@@ -107,3 +107,15 @@ multipart upload is available (with the use of the AWS SDK, not just CLI)
 **AWS snow cone**: like a snowball, but smaller box
 
 **AWS snow mobile**: truck that is like a snowball
+
+## Database services
+
+![Screenshot 2022-08-04 at 1.10.19 pm](../screenshots/Screenshot 2022-08-04 at 1.10.19 pm.png)
+
+choosing a data store:
+
+- schema backed?
+- Relational?
+
+
+
