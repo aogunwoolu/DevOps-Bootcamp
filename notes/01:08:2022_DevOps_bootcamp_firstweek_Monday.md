@@ -117,11 +117,11 @@ Many to *One* (subscription -> AAD), CANNOT ASSOCIATE MULTIPLE AADs to a single 
 
 **resource group**: management bucket
 
-	- resources are actual objects
-	- resources are associated to **one** resource group
- - in the same resource groups are (normally):
-   - objects that have the same longevity
-   - objects which have the same department
+- resources are actual objects
+- resources are associated to **one** resource group
+- in the same resource groups are (normally):
+  - objects that have the same longevity
+  - objects which have the same department
 
 **CANNOT BUILD ANYTHING WITHOUT HAVING RESOURCE GROUP AND SUBSCIPTION**
 

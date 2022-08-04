@@ -4,15 +4,15 @@
 
 best idea to combining instance plans
 
-	- on demand
-	- spot instance
-	- compute savings plans
-	- EC2 savings plans
+- on demand
+- spot instance
+- compute savings plans
+- EC2 savings plans
 
 if placement groups not defined, instances boot in random locations. If they are, you can specify the availability zone etc.
 
-	- **spread placement group**: spreading different hardware in different availability zones
-	- **partitioned placement group**: spreading storage so you don't have to queue as much
+- **spread placement group**: spreading different hardware in different availability zones
+- **partitioned placement group**: spreading storage so you don't have to queue as much
 
 serverless computing (**lambda**) runs on a server, but it is abstracted from user
 
@@ -54,9 +54,9 @@ using the AWS backbone to access storage can give you better or worse. you can u
 
 **Elastic Block store (EBS)**: is not deleted: static, block level storage. Attach EC2 instance to EBS volume
 
-	- pay for how big the disk itself is
-	- EBS multi attach: attach up to 16 devices
-	- block level storage (harddrive in cloud)
+- pay for how big the disk itself is
+- EBS multi attach: attach up to 16 devices
+- block level storage (harddrive in cloud)
 
 **Elastic File Service (EFS)**: file level storage. 
 

@@ -6,7 +6,7 @@ Rob.Blincoe@QA.com
 
 ### architecting fundamentals
 
-=**Durability**: the servers will always be there
+**Durability**: the servers will always be there
 
 **Region**: an area with 2 or more availability zones
 
