@@ -32,7 +32,7 @@ next session: https://qa-learning.webex.com/qa-learning/j.php?MTID=m85065d67a8a7
 
 - 
 
-![Screenshot 2022-08-01 at 12.18.08](../screenshots/Screenshot 2022-08-01 at 12.18.08.png)
+![Screenshot 2022-08-01 at 12.18.08](../../screenshots/Screenshot 2022-08-01 at 12.18.08.png)
 
 - IAAS = infrastructure as a service 
 - PAAS = platform as a service![Screenshot 2022-08-01 at 12.19.26](../screenshots/Screenshot 2022-08-01 at 12.19.26.png)
