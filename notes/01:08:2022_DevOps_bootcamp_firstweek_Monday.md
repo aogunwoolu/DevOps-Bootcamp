@@ -32,10 +32,10 @@ next session: https://qa-learning.webex.com/qa-learning/j.php?MTID=m85065d67a8a7
 
 - 
 
-![Screenshot 2022-08-01 at 12.18.08](/Users/qol01/Documents/sky_devops_bootcamp/screenshots/Screenshot 2022-08-01 at 12.18.08.png)
+![Screenshot 2022-08-01 at 12.18.08](../screenshots/Screenshot 2022-08-01 at 12.18.08.png)
 
 - IAAS = infrastructure as a service 
-- PAAS = platform as a service![Screenshot 2022-08-01 at 12.19.26](/Users/qol01/Documents/sky_devops_bootcamp/screenshots/Screenshot 2022-08-01 at 12.19.26.png)
+- PAAS = platform as a service![Screenshot 2022-08-01 at 12.19.26](../screenshots/Screenshot 2022-08-01 at 12.19.26.png)
 
 - **service level agreement**, the basic promise that the provider gives you (server will be active for 23hrs/day or be compensated)
 
@@ -55,11 +55,11 @@ next session: https://qa-learning.webex.com/qa-learning/j.php?MTID=m85065d67a8a7
 
   - public cloud has a lot more security
 
-  ![Screenshot 2022-08-01 at 12.32.14](/Users/qol01/Documents/sky_devops_bootcamp/screenshots/Screenshot 2022-08-01 at 12.32.14.png)
+  ![Screenshot 2022-08-01 at 12.32.14](../screenshots/Screenshot 2022-08-01 at 12.32.14.png)
 
 CapEx vs OpEx
 
-![Screenshot 2022-08-01 at 12.33.49](/Users/qol01/Documents/sky_devops_bootcamp/screenshots/Screenshot 2022-08-01 at 12.33.49.png)
+![Screenshot 2022-08-01 at 12.33.49](../screenshots/Screenshot 2022-08-01 at 12.33.49.png)
 
 ### creating azure VM
 
@@ -109,7 +109,7 @@ linking a user to **instance** is called an **association**
 
 there will be multiple subscriptions, because there is a clear seperation of VMs and instances
 
-![Screenshot 2022-08-01 at 15.13.49](/Users/qol01/Documents/sky_devops_bootcamp/screenshots/Screenshot 2022-08-01 at 15.13.49.png)
+![Screenshot 2022-08-01 at 15.13.49](../screenshots/Screenshot 2022-08-01 at 15.13.49.png)
 
 One to *Many* (AAD -> subscription)
 

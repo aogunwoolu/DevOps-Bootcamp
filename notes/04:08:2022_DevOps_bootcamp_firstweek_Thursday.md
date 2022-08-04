@@ -81,7 +81,7 @@ S3 stores data as *objects* in *buckets*
 
 Macie is a tool that can find your buckets that may not be intended to be public
 
-![Screenshot 2022-08-04 at 11.31.22 am](/Users/qol01/Documents/sky_devops_bootcamp/screenshots/Screenshot 2022-08-04 at 11.31.22 am.png)
+![Screenshot 2022-08-04 at 11.31.22 am](../screenshots/Screenshot 2022-08-04 at 11.31.22 am.png)
 
 consider the impact of storage on environment 
 
@@ -101,3 +101,9 @@ can encrypt data, this is the default option (s3 buckets have encryption off by 
 S3 buckets can trigger lambda functions
 
 multipart upload is available (with the use of the AWS SDK, not just CLI)
+
+**AWS snowball**: hard drive (storage device), sent out to your data center to copy over data to migrate. big physical box
+
+**AWS snow cone**: like a snowball, but smaller box
+
+**AWS snow mobile**: truck that is like a snowball
