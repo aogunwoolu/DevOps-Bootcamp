@@ -71,22 +71,23 @@ you can communicate with any private machine within the same network, but you mu
 
 **AMI**: Amazon Mahine Image
 
-	- images of OSs provided by Amazon
-	- Updates *image* not instance. to update instances, NAT may be required
+- images of OSs provided by Amazon
+- Updates *image* not instance. to update instances, NAT may be required
 
 **Account**: what subscriptions are in AWS
 
 **Organisation**: a grouping of OUs (Organisational Unit) or a collection of accounts tht are treated as 1 entity 
 
-	- you can have up to 5 levels of OUs
+- you can have up to 5 levels of OUs
+
  - Can apply ***policies***, ***reports*** and ***services***
    - these can be done on an OU level as opposed to the individual account
    - this is the best practice for policies
 
 **IAM user**: user with permission that have jurisdiction over accounts
 
-	- a role can be used to extend the permissions of an IAM user
-	- can give jurisdiction in another account
+- a role can be used to extend the permissions of an IAM user
+- can give jurisdiction in another account
 
 ![Screenshot 2022-08-03 at 1.50.09 pm](../screenshots/Screenshot 2022-08-03 at 1.50.09 pm.png)
 

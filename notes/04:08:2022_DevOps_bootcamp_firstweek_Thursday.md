@@ -117,5 +117,50 @@ choosing a data store:
 - schema backed?
 - Relational?
 
+MS Aurora is a schema based SQL database solution, which is well maintained.
 
+Dynamo DB can scale both ways (horizontal or vertical)
 
+- has consistency options (consistent vs available)
+
+redshift can be used as data warehouse
+
+## cloudwatch
+
+- the best way to log infiormation
+- can send notifications via SNS
+  - costs per message
+- doesn't want to report memory
+  - security risk
+
+Eventbridge, is a if this then that system based on monitoring 
+
+**types of load balancers**:
+
+- Application 
+- Network
+- Gateway
+- Classic
+
+when monitoring CPUs, autoscaling samples the average of all machine CPUs. Through this, there can be boundaries implemented
+
+once you set the auto scaling group maximum, even if it's above the metric it won't create another
+
+as the Autoscale group there is a **warmup** period. If it requires another 2 instances to get the CPU usage under the specified metric but there is some instance instance already booting: it would only boot another 1 machine because the asutoscaling hasn't seen the effect of the 1st machine.
+
+- start autoscaling at ~70% ***not*** 99% as it will not boot up instances in time before denial of service
+
+there is also a **cooldown** period, where machines take time to shut down. not as important as warmup
+
+**components**
+
+- launch configuration (or launch template)
+- Auto scaling group (ASG)
+- auto scaling policy
+
+use ***warm pool*** to lower costs
+
+- warm pool are previously built instances that you can easily start instead of building whole new ones, can have warm pool in different states
+  - stopped (only pay for disk)
+  - Running (not paying for throughput & licence)
+  - Hiberating
