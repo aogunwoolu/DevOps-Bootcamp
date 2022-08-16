@@ -192,3 +192,16 @@ legal and regulatory requirements:
 - PCI-DSS: card payment security and reduce fraud
 - GDPR: standardize approach to data across EU
 - Security policy framework (SPF): policies on security relating to the government and its suppliers
+
+
+
+
+
+
+
+
+
+
+
+
+
