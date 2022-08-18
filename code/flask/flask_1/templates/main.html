@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div id="app">
+    <h1>[[name]] is the coolest guy</h1>
+    <img src="https://c.tenor.com/vjDSipHhsjAAAAAM/fortnite-snake-eyes.gif" alt="fortnite">
+    <p>poggers xDDDDD</p>
+    <s>EZ Clap</s>
+    <h1>[[name]] is Based AF</h1>
+    <img src="https://tenor.com/view/based-basedge-twitch-gif-24939361.gif" alt="based">
+    <input v-model="name">
+</div>
+{% endblock %}
+
+{% block script %}
+<script type="text/javascript">
+    var app = new Vue({
+        el: '#app',
+        delimiters: ['[[', ']]'],
+        data: {
+            name: "{{name}}",
+        }
+    })
+</script>
+{% endblock%}

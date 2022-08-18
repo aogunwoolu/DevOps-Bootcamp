@@ -81,7 +81,7 @@ S3 stores data as *objects* in *buckets*
 
 Macie is a tool that can find your buckets that may not be intended to be public
 
-![Screenshot 2022-08-04 at 11.31.22 am](../screenshots/Screenshot 2022-08-04 at 11.31.22 am.png)
+![Screenshot 2022-08-04 at 11.31.22 am](https://imgur.com/BBE3AAl.png)
 
 consider the impact of storage on environment 
 
@@ -110,7 +110,7 @@ multipart upload is available (with the use of the AWS SDK, not just CLI)
 
 ## Database services
 
-![Screenshot 2022-08-04 at 1.10.19 pm](../screenshots/Screenshot 2022-08-04 at 1.10.19 pm.png)
+![Screenshot 2022-08-04 at 1.10.19 pm](https://imgur.com/m450kRs.png)
 
 choosing a data store:
 

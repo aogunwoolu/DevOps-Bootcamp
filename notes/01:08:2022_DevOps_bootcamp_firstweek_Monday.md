@@ -30,12 +30,10 @@ next session: https://qa-learning.webex.com/qa-learning/j.php?MTID=m85065d67a8a7
 
 - every day something is changing in the cloud
 
-- 
-
-![Screenshot 2022-08-01 at 12.18.08](../screenshots/Screenshot 2022-08-01 at 12.18.08.png)
+![Screenshot 2022-08-01 at 12.18.08](https://imgur.com/o9ucKHw.png)
 
 - IAAS = infrastructure as a service 
-- PAAS = platform as a service![Screenshot 2022-08-01 at 12.19.26](../screenshots/Screenshot 2022-08-01 at 12.19.26.png)
+- PAAS = platform as a service![Screenshot 2022-08-01 at 12.19.26](https://imgur.com/hLrqvuS.png)
 
 - **service level agreement**, the basic promise that the provider gives you (server will be active for 23hrs/day or be compensated)
 
@@ -55,11 +53,11 @@ next session: https://qa-learning.webex.com/qa-learning/j.php?MTID=m85065d67a8a7
 
   - public cloud has a lot more security
 
-  ![Screenshot 2022-08-01 at 12.32.14](../screenshots/Screenshot 2022-08-01 at 12.32.14.png)
+  ![Screenshot 2022-08-01 at 12.32.14](https://imgur.com/YZaL8En.png)
 
 CapEx vs OpEx
 
-![Screenshot 2022-08-01 at 12.33.49](../screenshots/Screenshot 2022-08-01 at 12.33.49.png)
+![Screenshot 2022-08-01 at 12.33.49](https://imgur.com/fNrGCCk.png)
 
 ### creating azure VM
 
@@ -109,7 +107,7 @@ linking a user to **instance** is called an **association**
 
 there will be multiple subscriptions, because there is a clear seperation of VMs and instances
 
-![Screenshot 2022-08-01 at 15.13.49](../screenshots/Screenshot 2022-08-01 at 15.13.49.png)
+![Screenshot 2022-08-01 at 15.13.49](https://imgur.com/qn1XDt4.png)
 
 One to *Many* (AAD -> subscription)
 

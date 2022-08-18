@@ -105,7 +105,7 @@ The DevOps toolset aimed at supporting pillars:
 
 there should be an ease to swap in and out without breaking the entire chain
 
-![Screenshot 2022-08-08 at 11.50.20 am](../screenshots/Screenshot 2022-08-08 at 11.50.20 am.png)
+![Screenshot 2022-08-08 at 11.50.20 am](https://imgur.com/MaJL1vd.png)
 
 **Jenkins**: can set to look for when teammates push to a specific branch (using webhooks) which starts a job and runs tests + build
 

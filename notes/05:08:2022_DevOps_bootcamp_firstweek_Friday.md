@@ -97,7 +97,7 @@ things can be done to help with latency.
 	- can dictate protocol
 	- Embargo countries/IP ranges
 
-![Screenshot 2022-08-05 at 4.09.21 pm](../screenshots/Screenshot 2022-08-05 at 4.09.21 pm.png)
+![Screenshot 2022-08-05 at 4.09.21 pm](https://imgur.com/PB6dek3.png)
 
 when caching in **cloufront**, you give it a TTL (time to live)
 

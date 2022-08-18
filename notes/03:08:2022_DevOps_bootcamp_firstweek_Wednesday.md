@@ -14,7 +14,7 @@ Rob.Blincoe@QA.com
 
 - can build relationships between these called **peers**
 - these peers are _non-transative_
-  - ![Screenshot 2022-08-03 at 1.32.06 pm](../screenshots/Screenshot 2022-08-03 at 1.32.06 pm.png)
+  - ![Screenshot 2022-08-03 at 1.32.06 pm](https://imgur.com/MjLHudM.png)
   - QAC has relationship with QAHE but not QAA
 - advised not to use the default VPC
 
@@ -37,7 +37,7 @@ _if you connect a private subnet to the IGW via its routing table it becomes **p
      - limit of 5
      - can be moved between resources (detatched from one resource to another)
 
-![Screenshot 2022-08-03 at 10.39.27 am](../Screenshots/Screenshot 2022-08-03 at 10.39.27 am.png)
+![Screenshot 2022-08-03 at 10.39.27 am](https://imgur.com/lYgO46x.png)
 
 every subnet has a **firewall**, called a NACL (Network Access Control)
 
@@ -58,7 +58,7 @@ you can communicate with any private machine within the same network, but you mu
 
  - you can attatch an elastic IP to resources (EC2 instances) directly, but load balancer is a managed protected service ( which can distribute, if paired with *auto scaler* can relaunch instances)
 
-   ![Screenshot 2022-08-03 at 10.45.09 am](../screenshots/Screenshot 2022-08-03 at 10.45.09 am.png)
+   ![Screenshot 2022-08-03 at 10.45.09 am](https://imgur.com/odWPiPI.png)
 
 **NAT Resource **: public resource that allows access to the internet (to allow for things like communication to internet update services)
 
@@ -67,7 +67,7 @@ you can communicate with any private machine within the same network, but you mu
 - NAT gateway (managed) 
   - **must** start within private network, ***NOT*** outside
 
-![Screenshot 2022-08-03 at 11.03.24 am](../screenshots/Screenshot 2022-08-03 at 11.03.24 am.png)
+![Screenshot 2022-08-03 at 11.03.24 am](https://imgur.com/S2Nt9RH.png)
 
 **AMI**: Amazon Mahine Image
 
@@ -89,7 +89,7 @@ you can communicate with any private machine within the same network, but you mu
 - a role can be used to extend the permissions of an IAM user
 - can give jurisdiction in another account
 
-![Screenshot 2022-08-03 at 1.50.09 pm](../screenshots/Screenshot 2022-08-03 at 1.50.09 pm.png)
+![Screenshot 2022-08-03 at 1.50.09 pm](https://imgur.com/eOHivlf.png)
 
 With perissions:
 
@@ -99,7 +99,7 @@ With perissions:
 
 **explicit**: picking denials
 
-![Screenshot 2022-08-03 at 2.23.45 pm](../screenshots/Screenshot 2022-08-03 at 2.23.45 pm.png)
+![Screenshot 2022-08-03 at 2.23.45 pm](https://imgur.com/mdk3LKc.png)
 
 **Security/Service Control Policies (SCP)**: a policy linked to an OU, a _filter_ of permission
 
@@ -122,6 +122,6 @@ AWS reserves the addresses:
 
 CIDR recap:
 
-![Screenshot 2022-08-04 at 9.05.19 am](../screenshots/Screenshot 2022-08-04 at 9.05.19 am.png)
+![Screenshot 2022-08-04 at 9.05.19 am](https://imgur.com/6aoH5hT.png)
 
 front with a managed service: having managed service like load balance

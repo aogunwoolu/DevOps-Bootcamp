@@ -68,7 +68,7 @@ return of regex is match object or **none** if nothing is found
 
 ## flags
 
-![Screenshot 2022-08-15 at 11.51.35 am](/Users/qol01/Documents/sky_devops_bootcamp/screenshots/Screenshot 2022-08-15 at 11.51.35 am.png)
+![Screenshot 2022-08-15 at 11.51.35 am](https://imgur.com/VunpG6G.png)
 
 ## back referencing
 
