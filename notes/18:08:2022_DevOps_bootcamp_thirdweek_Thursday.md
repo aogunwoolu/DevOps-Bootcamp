@@ -202,7 +202,7 @@ best team size: 5 - 9 (**preferably 6**)
        - ordering product backlog
        - make transparent, understandable & visible product backlog
      - business focused
-     - is the face for scrum team
+     - is the face for scrum team when contacting stakeholders
    - ___developer___
      - Types:
        - Testers
@@ -222,7 +222,12 @@ best team size: 5 - 9 (**preferably 6**)
      - when lacking skills, **bringing someone else in** vs **training a member in a team**
 4. **Values**:
    - courage
+     - do the right thing and work on tough problems
    - focus
+     - focus on the sprint and its goal
    - commitment
+     - committing yourself to the team and spring goals
    - respect
+     - helping people to learn things you are good at & not judging the things that others aren't good at
    - openness
+     - highlighting when you have challenges and problems stopping you from success
