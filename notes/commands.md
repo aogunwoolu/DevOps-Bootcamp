@@ -15,6 +15,9 @@
   - redirects to a scroll menu
   - ***space*** to scroll down
   - **Q** to exit/quit
+- **git log --oneline**: produces every change, with info on one line
+- **git checkout [change id]**: go to another state (the past/another branch)
+- **git switch
 
 ### Pipenv
 

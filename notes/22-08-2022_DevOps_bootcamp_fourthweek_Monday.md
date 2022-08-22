@@ -59,3 +59,4 @@ if you take all members in a group's opinion and average, it will be likely to b
 
 git tracks **files** not **folders**
 
+**HEAD**: the current location in the git history (defaults to current)
