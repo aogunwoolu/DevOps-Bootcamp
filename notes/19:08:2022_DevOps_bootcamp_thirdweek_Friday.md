@@ -4,7 +4,7 @@
 
 **stakeholders** (people who have an interest in the project) pick themselves,
 
-	- stakeholders power refers to the influence of said stakeholder
+- stakeholders power refers to the influence of said stakeholder
 
 In agile environment, ___pull___ don't push:
 
@@ -103,16 +103,16 @@ user story test:
 
     - **MOSCOW prioritisation**
 
-      - ___M___ust _have this time_
+      - ***M***ust _have this time_
         - vital, without it: there is no value
         - <strong>60% of the effort</strong>
-      - ___S___hould _have this time_
+      - ***S***hould _have this time_
         - Important, but not vital
         - <strong>20% of the effort</strong>
-      - ___C___ould _have this time_
+      - ***C***ould _have this time_
         - if the time allows, get it done
         - <strong>20% of the effort</strong>
-      - ___W___on't _have this time_
+      - ***W***on't _have this time_
         - out of scope
       - can only be used in a sprint/project (something that has a timeframe)
       - always do **must** have first
@@ -148,8 +148,68 @@ to reduce extended time frame estimation due to miscommunication, involve the wh
 - ***Scale***: 0, 1, 2, 3, 5, 8, 13, 21
   - 0 scale is put on features already implemented 
   - gaps getting bigger because of the larger uncertainty
-- ***poke cards***: each member has set of cards with points and declares their hand
+- ***poker cards***: each member has set of cards with points and declares their hand
   - waiting for everyone to draw a card about the uncertainty 
   - numbered cards
 - ***RPS***: **R**ock, **P**aper, **S**cissors
   - showing how big the job is with fingers
+
+break down a large story into smaller items = **story mapping**
+
+during a retrospective **have both positives & negatives**
+
+## measuring progress
+
+1. **Kanban**
+
+   - jira + azure devops have these built in
+   - kanban = "big flag"
+   - created by toyota
+     - Lean
+   - way of tracking
+   - place down task and wait for it to be pulled
+
+2. **Burn charts**
+
+   1. **Burn-down chart**
+
+      1. calculated points based on estimation technique
+      2. add up points
+      3. calculate velocity of points
+      4. as more tasks are finished, the amount of points should steadily decrease in bulks of tickets![A6A3s0v](https://i.imgur.com/A6A3s0v.png)
+
+   2. **Burn-up chart**
+
+      1. calculate target line of points achieved
+
+      2. Each task done should increase points
+
+         ![QEVd9Zr](https://i.imgur.com/QEVd9Zr.png)
+
+      in jira/azure devops, this is automatically generated
+
+      
+
+      **velocity**: number of points delivered during the sprint
+
+      **predictability**: 
+      $$
+      \frac{number of planned points}{number of delivered points}
+      $$
+      anything 
+      $$
+      80\% - 120\%
+      $$
+      is good
+
+3. **Daily standups**
+
+## release planning
+
+thinking about when to release
+
+create **release roadmap**, which includes marketing etc.
+
+Driven by business instead of developers
+
+**product owner** working with marketing

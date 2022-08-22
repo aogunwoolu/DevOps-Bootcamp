@@ -169,8 +169,9 @@ best team size: 5 - 9 (**preferably 6**)
        - if you do not refine the bcklog, this is not agile
    - ___sprint retrospective___
      - reflect on performance as a team
-     - anything should stop
-     - anything should start
+     - anything should **start**
+     - anything should **stop**
+     - anything should **continue**
    - ___daily scrum___
      - event is for the developers
        - Testers
