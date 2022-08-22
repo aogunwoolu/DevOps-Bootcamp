@@ -5,6 +5,10 @@ from flask import Flask, render_template, request, redirect
 app = Flask(__name__)
 
 @app.route("/")
+def goodbye():
+    return render_template("main.html",name="Abi")
+
+@app.route("/hello")
 def mainPage():
     return """
         <strong>Hello World! 🥺</strong>
@@ -15,10 +19,6 @@ def mainPage():
 @app.route("/fun")
 def fun():
     return "this is funn"
-
-@app.route("/goodbye")
-def goodbye():
-    return render_template("main.html",name="Abi")
 
 @app.route("/id")
 def myid():

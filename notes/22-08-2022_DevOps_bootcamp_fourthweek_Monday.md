@@ -57,7 +57,5 @@ if you take all members in a group's opinion and average, it will be likely to b
 
 ### GIT
 
-- **Git status**: tells you the current state of git
-- **git config user.name ='[name]'**: sets config name
--  **git config user.name**: shows config name
-- **git config --list**: shows all 
+git tracks **files** not **folders**
+
