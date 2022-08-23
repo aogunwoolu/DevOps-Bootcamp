@@ -108,12 +108,22 @@ sudo cat /etc/gitlab/initial_root_password
 upon creating the instance, under the **user data** field input the following
 ```bash
 	#!/bin/bash
+
+	# handle the postfix setup
 	sudo yum install postfix -y
 	sudo service postfix start
 	sudo chkconfig postfix on
+	
+	# install the gitlab files and install them
 	curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash
 	sudo yum install gitlab-ce -y
+	
+	# regonfigure the gitlab web server
 	sudo gitlab-ctl reconfigure	
+
+	# store the content of the file in the home directory 
+	sudo cat /etc/gitlab/initial_root_password > initial_root_password.txt
+
 ```
 
 ## backup gitlab server
@@ -136,8 +146,8 @@ sudo yum install rsync
 1. log into GitLab server using SSH
 2. use command:
 
-**GitLab 12.2 or later:**
 <strong>commandline:</strong>
+**GitLab 12.2 or later:**
 ```bash
 sudo gitlab-backup create
 ```
@@ -148,4 +158,14 @@ sudo gitlab-rake gitlab:backup:create
 
 ***find GitLab version***
 https://stackoverflow.com/questions/21068773/how-to-check-the-version-of-gitlab
+
+<strong>Docker container:</strong>
+**GitLab 12.2 or later:**
+```bash
+docker exec -t <container name> gitlab-backup create
+```
+**GitLab 12.1 or earlier:**
+```bash
+docker exec -t <container name> gitlab-rake gitlab:backup:create
+```
 
