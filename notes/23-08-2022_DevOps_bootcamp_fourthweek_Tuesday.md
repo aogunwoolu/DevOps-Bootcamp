@@ -89,12 +89,52 @@ sudo cat /etc/gitlab/initial_root_password
 ![](https://i.imgur.com/sRhSL8O.png)
 
 **main gitlab dashboard**
+
 ![](https://i.imgur.com/be3lbOa.png)
 
 5. **create a project**
 	- select new project
 	- give information to it
 	- ![](https://i.imgur.com/575CpUF.png)
-	- clone with the http option
+	- you can now clone with SSH & HTTP
 	![](https://i.imgur.com/gWP80Gx.png)
-	- 
+	- cloning can now be done in any machine using
+	```bash
+	sudo yum install -y git
+	git clone [repo address]
+	```
+
+## automating
+upon creating the instance, under the **user data** field input the following
+```bash
+	#!/bin/bash
+	sudo yum install postfix -y
+	sudo service postfix start
+	sudo chkconfig postfix on
+	curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash
+	sudo yum install gitlab-ce -y
+	sudo gitlab-ctl reconfigure	
+```
+
+## backup gitlab server
+sources:
+https://nira.com/how-to-back-up-your-gitlab-server/#:~:text=Method%201%3A%20The%20Manual%20Method%20to%20Back%20Up%20Your%20GitLab%20Server&text=Log%20into%20your%20GitLab%20server,creation%20of%20your%20GitLab%20backup.
+
+https://docs.gitlab.com/ee/raketasks/backup_restore.html
+
+https://docs.gitlab.com/ee/raketasks/backup_gitlab.html
+
+**requirement**: rsync
+```bash
+# Debian/Ubuntu 
+sudo apt-get install rsync
+
+# RHEL/CentOS
+sudo yum install rsync
+```
+
+1. log into GitLab server using SSH
+2. use command:
+```bash
+sudo gitlab-rake gitlab:backup:create
+```
