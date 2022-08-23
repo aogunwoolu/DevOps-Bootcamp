@@ -116,7 +116,7 @@ upon creating the instance, under the **user data** field input the following (a
 	
 	# install the gitlab files and install them
 	curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash
-	sudo yum install gitlab-ce -y
+	sudo yum install gitlab-ce git -y
 	
 	# regonfigure the gitlab web server
 	sudo gitlab-ctl reconfigure	
@@ -233,3 +233,62 @@ sudo gitlab-ctl restart
 ```
 
 ## cronjob
+
+
+
+
+## Maven
+maven is a build tool, helps build what software needs
+- dependancy manager
+
+part of the Continuous Integration
+
+**more build managers:**
+1. Make
+2. Graadle
+3. Ant (not used as much)
+4. SBT
+5. Bamboo
+
+**maven** = Accumulator of knowledge (yiddish)
+
+controls the build using the **P**roject **O**bject **M**odel (POM)
+	- specify dependancies
+
+can create projects using **archetypes**, preset structure for project
+
+**objectives**:
+- make build process easy
+- uniform build system
+- quality build info
+
+java 11 - amazon corretto (free java)
+
+building maven project:
+```bash
+mvn archetype:generate -DarchetypeArtifactId=maven-archetype-quickstart
+```
+
+other options:
+- **artifactGroupid** - group ID, usually the same as back package
+- **artifactId** - the name of project
+- **version** - version, _1.0-SNAPSHOT_ by default
+- **package** - base package to put main java file
+
+structure:
+**myapp**
+	- ***pom.xml**
+	- ***src**
+		- **main**
+			- java
+				- com
+					- qa
+						- myapp
+							- App.java
+		- **test**
+			- java
+				- com
+					- qa
+						- myapp
+							- AppTest.java
+
