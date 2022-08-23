@@ -109,9 +109,9 @@ there will be multiple subscriptions, because there is a clear seperation of VMs
 
 ![Screenshot 2022-08-01 at 15.13.49](https://imgur.com/qn1XDt4.png)
 
-One to *Many* (AAD -> subscription)
+One to *Many* (AAD ⮕ subscription)
 
-Many to *One* (subscription -> AAD), CANNOT ASSOCIATE MULTIPLE AADs to a single subscription
+Many to *One* (subscription ⮕ AAD), CANNOT ASSOCIATE MULTIPLE AADs to a single subscription
 
 **resource group**: management bucket
 

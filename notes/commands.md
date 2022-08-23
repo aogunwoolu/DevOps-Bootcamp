@@ -17,7 +17,20 @@
   - **Q** to exit/quit
 - **git log --oneline**: produces every change, with info on one line
 - **git checkout [change id]**: go to another state (the past/another branch)
-- **git switch
+  - **git checkout main/master**: go back to the most recent changes
+- **git branch**: shows branches
+- **git branch [branch name]**: create a branch
+  - does not checkout to branch
+- **git merge [branch name]**: merges 2 branches together (may cause conflicts)
+  - constantly merge with main to keep up to date
+  - **three different approaches**:
+    1. **fast forward merge (default)**: fast fowards one of the branches to reach the other
+- **git diff**: compare branches
+- **git remote add [remote name] [remote url]**: creates a remote branch connected to the local branch
+- **git remote**: shows all remote branches
+- **git push -u [remote] [local]**: pushes from local branch to remote branch
+  - **-u**: upstream
+- **git clone [remote url]**: downloads git folder to the current working directory
 
 ### Pipenv
 

@@ -60,3 +60,21 @@ if you take all members in a group's opinion and average, it will be likely to b
 git tracks **files** not **folders**
 
 **HEAD**: the current location in the git history (defaults to current)
+
+**git conflict**: when 2 changes overwrite each other
+
+- happens very often 
+
+**.gitignore**: file in the same directory that the .git folder is that has a list of things to ignore during tracking e.g.
+
+- *.txt
+- Todo.txt
+- Images/
+
+
+
+to exit from vim:
+
+- **":wq"**, **:** = command mode, **w** = write and **q** = quit 
+- **shift + z + z**
+
