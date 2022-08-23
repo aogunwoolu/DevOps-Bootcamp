@@ -35,6 +35,9 @@ https://about.gitlab.com/install/#amazonlinux-2
 	- download the ssh key
 	- nativate to the location
 	- ssh -i "github-ssh-key.pem" [user]@[ipv6/ipv4 address]
+	
+![](https://i.imgur.com/khpvcrt.png)
+	
 4. 
 	**yum**: **Yellowdog Updater, Modified** (**YUM**)
 		- free and open-source command-line package-management utility for computers running the Linux operating system using the RPM Package Manager.
@@ -68,12 +71,30 @@ https://about.gitlab.com/install/#amazonlinux-2
 	```bash
 	sudo yum install gitlab-ce -y
 	```
-	**reconfigure**: 
+	**reconfigure**: command to reconfigure gitlab (setup), reverts changes and restarts services
 
-	
+	**gitlab-ctl**: gitlab control
+
 	```bash
-	# Check if opening the firewall is needed with: sudo systemctl status firewalld
-	sudo firewall-cmd --permanent --add-service=http
-	sudo firewall-cmd --permanent --add-service=https
-	sudo systemctl reload firewalld
+	sudo gitlab-ctl reconfigure
 	```
+![](https://i.imgur.com/jy6j9PX.png)
+
+**to find the initial root password (if it does not prompt for password input)**:
+
+**cat**: concatenate files and print on the standard output
+```bash
+sudo cat /etc/gitlab/initial_root_password
+```
+![](https://i.imgur.com/sRhSL8O.png)
+
+**main gitlab dashboard**
+![](https://i.imgur.com/be3lbOa.png)
+
+5. **create a project**
+	- select new project
+	- give information to it
+	- ![](https://i.imgur.com/575CpUF.png)
+	- clone with the http option
+	![](https://i.imgur.com/gWP80Gx.png)
+	- 
