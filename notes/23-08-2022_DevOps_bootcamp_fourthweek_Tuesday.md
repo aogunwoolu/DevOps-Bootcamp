@@ -105,7 +105,7 @@ sudo cat /etc/gitlab/initial_root_password
 	```
 
 ## automating
-upon creating the instance, under the **user data** field input the following
+upon creating the instance, under the **user data** field input the following (advanced details)
 ```bash
 	#!/bin/bash
 
@@ -169,3 +169,67 @@ docker exec -t <container name> gitlab-backup create
 docker exec -t <container name> gitlab-rake gitlab:backup:create
 ```
 
+**moving contents to s3 bucket**:
+
+**aws CLI**: aws [service]  [command]
+
+- copying to and from s3 bucket
+```bash
+aws s3 cp <local_dir> s3://<s3-bucket> --recursive
+aws s3 cp s3//<name of the folder> <local dir>
+```
+
+- create IAM role to give permissions 
+- IAM > Roles > Create Role > Trusted Entities
+```json
+{
+
+    "Version": "2012-10-17",
+
+    "Statement": [
+
+        {
+
+            "Effect": "Allow",
+
+            "Principal": {
+
+                "Service": "s3.amazonaws.com"
+
+            },
+
+            "Action": "sts:AssumeRole"
+
+        }
+
+    ]
+
+}
+```
+
+- list all buckets
+```bash
+aws s3 ls s3://[bucket name]
+```
+
+## restore gitlab server
+
+first stop processes related to database
+```bash
+sudo gitlab-ctl stop unicorn
+
+sudo gitlab-ctl stop sidekiq
+```
+
+pull from AWS bucket
+```bash
+aws s3 cp s3//[[name of the folder] [local dir]
+sudo gitlab-backup restore
+```
+
+restart gitlab
+```bash
+sudo gitlab-ctl restart
+```
+
+## cronjob
