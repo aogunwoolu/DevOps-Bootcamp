@@ -121,8 +121,8 @@ sources:
 https://nira.com/how-to-back-up-your-gitlab-server/#:~:text=Method%201%3A%20The%20Manual%20Method%20to%20Back%20Up%20Your%20GitLab%20Server&text=Log%20into%20your%20GitLab%20server,creation%20of%20your%20GitLab%20backup.
 
 https://docs.gitlab.com/ee/raketasks/backup_restore.html
-
-https://docs.gitlab.com/ee/raketasks/backup_gitlab.html
+	https://docs.gitlab.com/ee/raketasks/backup_gitlab.html
+	
 
 **requirement**: rsync
 ```bash
@@ -135,6 +135,17 @@ sudo yum install rsync
 
 1. log into GitLab server using SSH
 2. use command:
+
+**GitLab 12.2 or later:**
+<strong>commandline:</strong>
+```bash
+sudo gitlab-backup create
+```
+**GitLab 12.1 or earlier:**
 ```bash
 sudo gitlab-rake gitlab:backup:create
 ```
+
+***find GitLab version***
+https://stackoverflow.com/questions/21068773/how-to-check-the-version-of-gitlab
+
