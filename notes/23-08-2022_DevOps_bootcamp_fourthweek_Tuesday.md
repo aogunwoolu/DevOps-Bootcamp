@@ -214,7 +214,7 @@ aws s3 ls s3://[bucket name]
 
 ## restore gitlab server
 The gitlab server can be restored with the user data script.
-When initilising the EC2 instance the user data is bootstrapped and only ran once at the creation process of the EC2 instance
+When initialising the EC2 instance the user data is bootstrapped and only ran once at the creation process of the EC2 instance
 ```bash
 # set interpreter to bash
 #!/bin/bash
