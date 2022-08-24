@@ -207,12 +207,37 @@ aws s3 cp s3//<name of the folder> <local dir>
 }
 ```
 
-- list all buckets
+- list all the content of the buckets
 ```bash
 aws s3 ls s3://[bucket name]
 ```
 
 ## restore gitlab server
+The gitlab server can be restored with the user data script.
+When initilising the EC2 instance the user data is bootstrapped and only ran once at the creation process of the EC2 instance
+```bash
+# set interpreter to bash
+#!/bin/bash
+
+# handle the postfix setup
+sudo yum install postfix -y
+sudo service postfix start
+sudo chkconfig postfix on
+
+# install the gitlab files and install them
+sudo curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash
+sudo yum install gitlab-ce -y
+
+# regonfigure the gitlab web server 
+gitlab-ctl reconfigure
+
+# install git
+yum install -y git
+
+# store the content of the file in the home directory 
+cat /etc/gitlab/initial_root_password > initial_root_password.txt
+
+```
 
 first stop processes related to database
 ```bash
@@ -292,44 +317,3 @@ structure:
 						- myapp
 							- AppTest.java
 
-
-### setting up maven
-```bash
-# update yum packages
-sudo yum -y update
-
-# remove any existing java versions
-sudo yum remove java -y
-
-
-# install java 11 - corretto
-sudo yum install java-11-amazon-corretto -y
-
-# installs dependancies
-sudo /usr/sbin/alternatives --config javacInstall
-
-# download maven from official site
-wget http://mirror.ox.ac.uk/sites/rsync.apache.org/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
-
-# extract the maven files
-sudo tar xzf apache-maven-3.3.9-bin.tar.gz -C /usr/local
-
-# creates symbolic link from extracted app to the /maven folder
-sudo ln -s /usr/local/apache-maven-3.3.9 /usr/local/maven
-
-# creates symbolic link from binaries to /bin/mvn
-sudo ln -s /usr/local/maven/bin/mvn /bin/mvn
-
-# creates java project from archetype
-mvn archetype:generate -DgroupId=com.qa -DartifactId=hello-maven -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
-
-cd hello-maven/
-
-# test and run the app
-mvn test
-
-mvn package
-
-java -cp target/hello-maven-1.0-SNAPSHOT.jar com.qa.App
-
-```
