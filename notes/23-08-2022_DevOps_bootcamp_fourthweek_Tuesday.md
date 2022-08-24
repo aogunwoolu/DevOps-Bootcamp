@@ -292,3 +292,44 @@ structure:
 						- myapp
 							- AppTest.java
 
+
+### setting up maven
+```bash
+# update yum packages
+sudo yum -y update
+
+# remove any existing java versions
+sudo yum remove java -y
+
+
+# install java 11 - corretto
+sudo yum install java-11-amazon-corretto -y
+
+# installs dependancies
+sudo /usr/sbin/alternatives --config javacInstall
+
+# download maven from official site
+wget http://mirror.ox.ac.uk/sites/rsync.apache.org/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
+
+# extract the maven files
+sudo tar xzf apache-maven-3.3.9-bin.tar.gz -C /usr/local
+
+# creates symbolic link from extracted app to the /maven folder
+sudo ln -s /usr/local/apache-maven-3.3.9 /usr/local/maven
+
+# creates symbolic link from binaries to /bin/mvn
+sudo ln -s /usr/local/maven/bin/mvn /bin/mvn
+
+# creates java project from archetype
+mvn archetype:generate -DgroupId=com.qa -DartifactId=hello-maven -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+cd hello-maven/
+
+# test and run the app
+mvn test
+
+mvn package
+
+java -cp target/hello-maven-1.0-SNAPSHOT.jar com.qa.App
+
+```

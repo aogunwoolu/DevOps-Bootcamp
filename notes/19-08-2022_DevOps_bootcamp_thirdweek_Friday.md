@@ -80,7 +80,7 @@ user story test:
   - refactoring
     - changing the structure and implementation of code
   - spike
-    - experiemnt and learn
+    - experiment and learn
   - enablers
     - technical
     - allowing DNZ to accept packets via setting ports

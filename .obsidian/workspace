@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "notes/23-08-2022_DevOps_bootcamp_fourthweek_Tuesday.md",
+            "file": "notes/24-08-2022_DevOps_bootcamp_fourthweek_Wednesday.md",
             "mode": "source",
             "source": false
           }
@@ -61,8 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "c3e780d919055e48",
@@ -78,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/23-08-2022_DevOps_bootcamp_fourthweek_Tuesday.md",
+                "file": "notes/24-08-2022_DevOps_bootcamp_fourthweek_Wednesday.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/23-08-2022_DevOps_bootcamp_fourthweek_Tuesday.md",
+                "file": "notes/24-08-2022_DevOps_bootcamp_fourthweek_Wednesday.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/23-08-2022_DevOps_bootcamp_fourthweek_Tuesday.md"
+                "file": "notes/24-08-2022_DevOps_bootcamp_fourthweek_Wednesday.md"
               }
             }
           }
@@ -131,15 +130,15 @@
   },
   "active": "b2fb72eaaecffb50",
   "lastOpenFiles": [
-    "notes/04-08-2022_DevOps_bootcamp_firstweek_Thursday.md",
-    "notes/05-08-2022_DevOps_bootcamp_firstweek_Friday.md",
-    "notes/08-08-2022_DevOps_bootcamp_secondweek_Monday.md",
-    "notes/10-08-2022_DevOps_bootcamp_secondweek_Wednesday.md",
-    "notes/11-08-2022_DevOps_bootcamp_secondweek_Thursday.md",
-    "notes/12-08-2022_DevOps_bootcamp_secondweek_Friday.md",
+    "notes/23-08-2022_DevOps_bootcamp_fourthweek_Tuesday.md",
+    "notes/24-08-2022_DevOps_bootcamp_fourthweek_Wednesday.md",
+    "notes/22-08-2022_DevOps_bootcamp_fourthweek_Monday.md",
+    "notes/commands.md",
+    "notes/19-08-2022_DevOps_bootcamp_thirdweek_Friday.md",
+    "notes/18-08-2022_DevOps_bootcamp_thirdweek_Thursday.md",
     "notes/15-08-2022_DevOps_bootcamp_thirdweek_Monday.md",
     "notes/16-08-2022_DevOps_bootcamp_thirdweek_Tuesday.md",
-    "notes/03-08-2022_DevOps_bootcamp_firstweek_Wednesday.md",
-    "notes/09-08-2022_DevOps_bootcamp_secondweek_Tuesday.md"
+    "notes/17-08-2022_DevOps_bootcamp_thirdweek_Wednesday.md",
+    "notes/cyber_security.md"
   ]
 }
